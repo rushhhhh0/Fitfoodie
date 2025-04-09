@@ -6,33 +6,33 @@
 #### 1. Clone the Repository
 ```bash
 # for windows
-git clone <github_link>
-
-# for linux
-git clone <github_link_ssh>
+git clone https://github.com/rushhhhh0/Fitfoodie.git
 
 # change the working directory
-cd <repo_name>
+cd Fitfoodie
 ```
 
 #### 2. Create Virtual Env
 ##### a. Conda
 ```bash
-conda create -n <name> python=3.11
+conda create -n venv python=3.11
 
 # activate 
-conda activate <name>
+conda activate venv
 ```
 
 ##### b. Venv
 ```bash
-python -m venv <name>
+python -m venv venv --without-pip
+
+# install pip
+python get-pip.py
 
 # activate (for Linux OS)
-source <name>/bin/activate
+source venv/bin/activate
 
 # activate (For Windows)
-<name>\Scripts\activate
+venv\Scripts\activate
 ```
 
 #### 3. Install requirements.txt
